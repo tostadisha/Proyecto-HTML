@@ -1,0 +1,212 @@
+/* GENERAL */
+body{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: #fcfdf5;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li{
+    list-style: none;
+}
+body{
+    margin: 0;
+    background-color: #fcfdf5;
+}
+footer{
+    background-color: #d5708e;
+    height: 100px;
+}
+.ola{
+    width: 100%;
+}
+/* HEADER */
+body header img{
+    width: 10%;
+    display: inline;
+}
+body header nav{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    text-align: right;
+}
+body header nav ul{
+    margin: 0;
+}
+body header nav li{
+    display: inline-block;
+    padding: 11px 3% 11px 3%;
+    margin: 0px 1% 0px 1%;
+    text-align: center;
+    border-style: dashed;
+    border-color: #d5708e;
+    border-radius: 10px;
+}
+/* MAIN */
+.cajaPrincipal{
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.textoPrincipal h1{
+    display: inline-block;
+    margin-left: 25%;
+    margin-bottom: 5px;
+}
+.cajaPrincipal h4{
+    display: inline-block;
+    color: #d5708e;
+}
+.cajaPrincipal hr{
+    width: 10%;
+    display: inline-block;
+    margin-left: 26%;
+    margin-top: 2px;
+    height: 1px;
+    background-color: black;
+}
+.cajaPrincipal button{
+    margin-left: 10px;
+}
+.cajaPrincipal img{
+    position: absolute;
+    height: 300px;
+    right: 20%;
+    top: 48px;
+}
+/* CAMBIO MAIN A RECUADROS DE MAIN */
+main hr{
+    background-color: black;
+    height: 1px;
+}
+main .cajasContenedoras{
+    background-color: #d5708e;
+}
+main .cajasContenedoras div{
+    display: inline-block;
+    text-align: center;
+    font-weight: 900;
+    margin: 50px 9% 50px 9%;
+    width: 30%;
+    height: 200px;
+    border-style: dashed;
+    border-color: #fcfdf5;
+}
+main .cajasContenedoras div p{
+    display: inline-block;
+    text-align: center;
+    font-size: 22px;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    color: #fcfdf5;
+}
+main .botonUnete{
+    background-color: #d5708e;
+    padding-bottom: 20px;
+}
+main .botonUnete button{
+    display: inline-block;
+    margin-left: 42%;
+    font-size: 20px;
+    padding: 10px;
+    background-color: #d5708e;
+    border-color: #fcfdf5;
+}
+main .botonUnete button a{
+    color: #fcfdf5;
+}
+/* FOOTER  */
+footer .derechos{
+    bottom: 0;
+    display: inline-block;
+}
+footer .derechos p{
+    margin: 0;
+    display: inline-block;
+    color: #fcfdf5;
+}
+footer .redes{
+    position: absolute;
+    right: 20px;
+}
+footer div img{
+    height: 50px;
+    padding: 10px;
+}
+/* SOBRE-NOSOTROS */
+.titulos{
+    display: inline-block;
+    margin: 200px 0px 50px 15%;
+    font-size: 60px;
+}
+.titulos1{
+    padding: 200px 0px 50px 15%;
+    font-size: 60px;
+    margin: 0;
+    background-color: #d5708e;
+    color: white;
+}
+main .chicaFoto{
+    height: 400px;
+    position: absolute;
+    right: 23%;
+    top: 55px;
+}
+.ola{
+    z-index: -1;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    position: relative;
+    top: 10px;
+}
+.textoSn{
+    font-size: 30px;
+    padding: 10% 10% 0% 10%;
+}
+#textorosa{
+    background-color: #d5708e;
+    margin: 0;
+    color: #fcfdf5;
+    padding-bottom: 10%;
+}
+/* PROMOCIONES */
+.cajaSuperior{
+    display: inline-block;
+    padding-top: 20px;
+    padding-left: 19%;
+}
+.cajaSuperior h1{
+    display: inline-block;
+    /* padding-left: 10% ; */
+}
+.imagenesPromocion img{
+    height: 280px;
+    margin: 5%;
+}
+#cajaTextoInf{
+    background-color: #d5708e;
+}
+#textoInferior{
+    display: inline-block;
+    padding-left: 45%;
+    color: #fcfdf5;
+}
+.marcasAltas img{
+    margin-bottom: 0;
+}
+.marcasBajas{
+    position: relative;
+    background-color: #d5708e;
+}
+.marcasBajas img{
+    margin-top: 0;
+}
+#olaPromociones{
+    left: 0;
+    margin: 0;
+    top: 20;
+}
