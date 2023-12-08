@@ -23,24 +23,31 @@ footer{
     width: 100%;
 }
 /* HEADER */
-body header img{
-    width: 10%;
-    display: inline;
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+ body header img{
+    width: auto;
+    height: 80px;
+ }
 body header nav{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    text-align: right;
+    width: 50%;
+    justify-content: space-around;
+    flex-flow: nowrap row;
+    position: relative;
+    padding-right: 20px;
 }
 body header nav ul{
-    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
 }
 body header nav li{
-    display: inline-block;
+
     padding: 11px 3% 11px 3%;
-    margin: 0px 1% 0px 1%;
     text-align: center;
     border-style: dashed;
     border-color: #d5708e;
@@ -48,13 +55,15 @@ body header nav li{
 }
 /* MAIN */
 .cajaPrincipal{
+    display: flex;
+    justify-content: space-around;
     padding-top: 80px;
     padding-bottom: 80px;
 }
 .textoPrincipal h1{
-    display: inline-block;
     margin-left: 25%;
     margin-bottom: 5px;
+    margin-top: 70px;
 }
 .cajaPrincipal h4{
     display: inline-block;
@@ -63,55 +72,74 @@ body header nav li{
 .cajaPrincipal hr{
     width: 10%;
     display: inline-block;
-    margin-left: 26%;
-    margin-top: 2px;
+    /* margin-left: 26%;
+    margin-top: 2px; */
+    width: 70px;
     height: 1px;
+    margin: 0;
     background-color: black;
 }
+.textoPrincipal-abajo{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-right: 20%;
+}
+.textoPrincipal-abajo h4{
+    margin: 0px 10px 0px 10px;
+}
 .cajaPrincipal button{
-    margin-left: 10px;
+    background-color: #d5708e;
+    padding: 5px;
+    border-color: beige;
 }
 .cajaPrincipal img{
-    position: absolute;
     height: 300px;
-    right: 20%;
-    top: 48px;
 }
-/* CAMBIO MAIN A RECUADROS DE MAIN */
 main hr{
     background-color: black;
     height: 1px;
 }
+/* CAMBIO MAIN A RECUADROS DE MAIN */
 main .cajasContenedoras{
     background-color: #d5708e;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    height: 700px;
+    justify-items:center;
+    align-items: center;
 }
 main .cajasContenedoras div{
-    display: inline-block;
+    display: flex;
     text-align: center;
+    justify-content: center;
+    align-content: center;
     font-weight: 900;
-    margin: 50px 9% 50px 9%;
-    width: 30%;
+    width: 60%;
     height: 200px;
     border-style: dashed;
+    border-radius: 50px;
     border-color: #fcfdf5;
 }
 main .cajasContenedoras div p{
-    display: inline-block;
+    display: flex;
+    align-items: center;
     text-align: center;
-    font-size: 22px;
-    padding-top: 50px;
-    padding-bottom: 10px;
+    font-size: 30px;
+    padding: 0px 50px 0px 50px;
     color: #fcfdf5;
 }
 main .botonUnete{
     background-color: #d5708e;
-    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
 }
 main .botonUnete button{
-    display: inline-block;
-    margin-left: 42%;
     font-size: 20px;
     padding: 10px;
+    border-radius: 20px;
+    border-style: double;
     background-color: #d5708e;
     border-color: #fcfdf5;
 }
@@ -119,22 +147,18 @@ main .botonUnete button a{
     color: #fcfdf5;
 }
 /* FOOTER  */
-footer .derechos{
-    bottom: 0;
-    display: inline-block;
-}
-footer .derechos p{
-    margin: 0;
-    display: inline-block;
-    color: #fcfdf5;
-}
-footer .redes{
-    position: absolute;
-    right: 20px;
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 footer div img{
     height: 50px;
     padding: 10px;
+}
+.footer-derechos{
+    color: #fcfdf5;
+    font-size: 25px;
 }
 /* SOBRE-NOSOTROS */
 .titulos{
@@ -175,35 +199,39 @@ main .chicaFoto{
 }
 /* PROMOCIONES */
 .cajaSuperior{
-    display: inline-block;
-    padding-top: 20px;
-    padding-left: 19%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    margin-bottom: 100px;
 }
 .cajaSuperior h1{
     display: inline-block;
-    /* padding-left: 10% ; */
+}
+.imagenesPromocion{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 400px   ;
+    justify-items: center;
+    align-items: center;
+}
+.fondoRosa{
+    background-color: #d5708e;
+}
+.olaPromociones img{
+    position: absolute;
 }
 .imagenesPromocion img{
     height: 280px;
-    margin: 5%;
 }
 #cajaTextoInf{
     background-color: #d5708e;
 }
-#textoInferior{
-    display: inline-block;
-    padding-left: 45%;
+ #textoInferior{
+    display: flex;
+    justify-content: center;
     color: #fcfdf5;
-}
-.marcasAltas img{
-    margin-bottom: 0;
-}
-.marcasBajas{
-    position: relative;
-    background-color: #d5708e;
-}
-.marcasBajas img{
-    margin-top: 0;
+    margin: 0;
 }
 #olaPromociones{
     left: 0;
