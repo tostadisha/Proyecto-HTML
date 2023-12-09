@@ -46,7 +46,6 @@ body header nav ul{
     padding: 0;
 }
 body header nav li{
-
     padding: 11px 3% 11px 3%;
     text-align: center;
     border-style: dashed;
@@ -90,8 +89,13 @@ body header nav li{
 }
 .cajaPrincipal button{
     background-color: #d5708e;
-    padding: 5px;
+    padding: 10px;
     border-color: beige;
+    border-style: inherit;
+    border-radius: 50px;
+}
+.cajaPrincipal button a{
+    color: #fcfdf5;
 }
 .cajaPrincipal img{
     height: 300px;
@@ -127,7 +131,7 @@ main .cajasContenedoras div p{
     align-items: center;
     text-align: center;
     font-size: 30px;
-    padding: 0px 50px 0px 50px;
+    padding: 0px 50px;
     color: #fcfdf5;
 }
 main .botonUnete{
@@ -237,4 +241,113 @@ main .chicaFoto{
     left: 0;
     margin: 0;
     top: 20;
+}
+@media (max-width: 576px){
+/* HEADER */
+header{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+body header nav{
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+}
+body header nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #d5708e;
+    margin: 0;
+    justify-content: none;
+}
+#texto-doble{
+    display: inline-block;
+    width: 100px;
+}
+body header nav li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 4.5px;
+    border-radius: 0px;
+    border-style: none;
+    font-size: large;
+}
+body header nav li a{
+    color: #fcfdf5;
+}
+/* MAIN */
+.cajaPrincipal{
+    padding: 0;
+}
+.cajaPrincipalDerecha{
+    position: absolute;
+    z-index: -1;
+    margin-top: 10px;
+    right: 7px;
+}
+.cajaPrincipalIzquierda{
+    height: 320px;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+.textoPrincipal h1{
+    margin-left: 0;
+    width: 70%;
+}
+.textoPrincipal-abajo{
+    margin: 0;
+    justify-content: left;
+}
+main .cajasContenedoras{
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+}
+main .cajasContenedoras div{
+    height: auto;
+    width: 80%;
+    margin-top: 50px;
+}
+.botonUnete{
+    padding: 5px 0px
+}
+/* FOOTER */
+footer{
+    display: flex;
+}
+footer .footer-derechos{
+    font-size: medium;
+}
+.redes{
+    display: flex;
+}
+footer .redes img{
+    height: 30px;
+}
+/* PROMOCIONES */
+.imagenesPromocion{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2,200px);
+
+}
+.imagenesPromocion img{
+    height: 150px;
+}
+.cajaSuperior{
+    height: auto;
+    margin: 0;
+}
+.cajaSuperior h1{
+    font-size: 30px;
+    width: 90%;
+}
+#cajaSuperior-calidad{
+    text-align: center;
+    margin-top: 0;
+}
 }
