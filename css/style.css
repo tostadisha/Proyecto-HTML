@@ -458,7 +458,6 @@ footer div img{
 /* SOBRE NOSOTROS */
 .cajaSuperior-sobreNosotros img{
     height: 200px;
-    padding: 0;
 }
 }
 /* LAPTOP */
@@ -468,7 +467,8 @@ body header nav{
     width: 60%;
 }
     /* PROMOCIONES */
-.imagenesPromocion img{
-    height: 13em;
+.cajaSuperior-sobreNosotros img{
+    padding: 0;
+
 }
 }
