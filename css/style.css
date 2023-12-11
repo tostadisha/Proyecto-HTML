@@ -285,7 +285,7 @@ main label{
     width: 99.3%;
 }
 /* MOBILE */
-@media screen and (max-width: 425px){
+@media screen and (max-width: 426px){
 /* HEADER */
 header{
     display: flex;
@@ -427,6 +427,7 @@ footer .redes img{
 }
 .mainRegistro h1,.mainRegistro h1{
     font-size: 1.7rem;
+}
 }
 /* TABLET */
 @media screen and (min-width:426px) and (max-width:768px){
