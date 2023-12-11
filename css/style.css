@@ -458,6 +458,7 @@ footer div img{
 /* SOBRE NOSOTROS */
 .cajaSuperior-sobreNosotros img{
     height: 200px;
+    padding: 0;
 }
 }
 /* LAPTOP */
