@@ -1,0 +1,50 @@
+@import "../utils/variables";
+.contenedorSuperior {
+  p {
+    font-size: 30px;
+    padding: 2% 10% 0% 10%;
+  }
+  div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    img {
+      height: 500px;
+      padding-right: 100px;
+    }
+    h1 {
+      display: inline-block;
+      font-size: 60px;
+      padding-left: 100px;
+    }
+  }
+}
+.ola {
+  z-index: -1;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  position: relative;
+  top: 10px;
+  width: 100%;
+}
+.contenedorInferior {
+  h1 {
+    padding: 120px 0px 50px 15%;
+    font-size: 60px;
+    margin: 0;
+    background-color: $colorPrimario;
+    color: white;
+  }
+  p {
+    font-size: 30px;
+    padding: 2% 10% 0% 10%;
+  }
+  #textorosa {
+    background-color: $colorPrimario;
+    margin: 0;
+    color: $colorSecundario;
+    padding-bottom: 10%;
+  }
+}

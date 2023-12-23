@@ -1,0 +1,25 @@
+// UTILS
+@import "../utils/variables";
+
+nav {
+    width: 50%;
+    justify-content: space-around;
+    flex-flow: nowrap row;
+    position: relative;
+    padding-right: 20px;
+    li {
+      display: flex;
+      align-items: center;
+      padding: 11px 3%;
+      text-align: center;
+      border-style: dashed;
+      border-color: $colorPrimario;
+      border-radius: 10px;
+    }
+    ul {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0;
+    }
+}

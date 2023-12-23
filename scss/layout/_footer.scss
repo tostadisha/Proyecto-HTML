@@ -1,0 +1,24 @@
+// UTILS
+@import "../utils/variables";
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $colorPrimario;
+  height: 100px;
+  .redes {
+    a {
+      height: 50px;
+      padding: 10px;
+    }
+    img {
+      height: 50px;
+      padding: 10px;
+    }
+  }
+  .footer-derechos {
+    color: $colorSecundario;
+    font-size: 25px;
+  }
+}

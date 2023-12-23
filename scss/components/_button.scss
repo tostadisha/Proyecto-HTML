@@ -1,0 +1,33 @@
+// UTILS
+@import "../utils/variables";
+
+main {
+  .botonUnete {
+    background-color: $colorPrimario;
+    display: flex;
+    justify-content: center;
+    button {
+      font-size: 20px;
+      padding: 10px;
+      border-radius: 20px;
+      border-style: double;
+      background-color: $colorPrimario;
+      border-color: $colorSecundario;
+      a {
+        color: $colorSecundario;
+      }
+    }
+  }
+}
+.cajaPrincipal {
+  button {
+    background-color: $colorPrimario;
+    padding: 10px;
+    border-color: beige;
+    border-style: inherit;
+    border-radius: 50px;
+    a {
+      color: black;
+    }
+  }
+}

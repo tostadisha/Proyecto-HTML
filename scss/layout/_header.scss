@@ -1,0 +1,14 @@
+// UTILS
+@import "../utils/variables";
+
+body {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    img {
+      width: auto;
+      height: 80px;
+    }
+  }
+}

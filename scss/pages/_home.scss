@@ -1,0 +1,63 @@
+// UTILS
+@import "../utils/variables";
+
+.cajaPrincipal {
+  display: flex;
+  justify-content: space-around;
+  padding: 80px 0px;
+  .cajaPrincipalIzquierda {
+    .textoPrincipal {
+      h1 {
+        margin-left: 25%;
+        margin-bottom: 5px;
+        margin-top: 70px;
+      }
+    }
+    .textoPrincipal-abajo {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      margin-right: 20%;
+      h4 {
+        display: inline-block;
+        color: $colorPrimario;
+        margin: 0px 10px;
+      }
+      hr {
+        width: 10%;
+        display: inline-block;
+        width: 70px;
+        height: 1px;
+        margin: 0;
+        background-color: black;
+      }
+    }
+  }
+  img {
+    height: 300px;
+  }
+}
+.cajasContenedoras {
+  background-color: $colorPrimario;
+  height: 700px;
+  div {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    font-weight: 900;
+    width: 60%;
+    height: 200px;
+    border-style: dashed;
+    border-radius: 50px;
+    border-color: $colorSecundario;
+    p {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      font-size: 30px;
+      padding: 0px 15px;
+      color: $colorSecundario;
+    }
+  }
+}

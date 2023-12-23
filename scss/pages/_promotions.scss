@@ -1,0 +1,36 @@
+.cajaSuperior {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 100px;
+  h1 {
+    display: inline-block;
+    text-align: center;
+  }
+}
+.fondoRosa {
+  background-color: $colorPrimario;
+}
+.olaPromociones img {
+  position: absolute;
+}
+.imagenesPromocion {
+  img {
+    height: 280px;
+  }
+}
+#cajaTextoInf {
+  background-color: $colorPrimario;
+  #textoInferior {
+    display: flex;
+    justify-content: center;
+    color: $colorSecundario;
+    margin: 0;
+  }
+}
+#olaPromociones {
+  left: 0;
+  margin: 0;
+  top: 20;
+}

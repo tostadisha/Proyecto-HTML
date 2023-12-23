@@ -1,0 +1,14 @@
+// UTILS
+@import "../utils/variables";
+
+a {
+    text-decoration: none;
+    color: black;
+}
+li {
+    list-style: none;
+}
+body {
+    background-color: $colorSecundario;
+    margin: 0;
+}
