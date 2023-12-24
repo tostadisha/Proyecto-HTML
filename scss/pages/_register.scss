@@ -1,9 +1,11 @@
 .mainRegistro {
+  @include modFlex(normal, center);
+  flex-direction: column;
   .razonesRegistro,
   .razonesComerciales {
     width: 90%;
-    border-color: black;
-    border-style: solid;
+    border-color: $colorPrimario;
+    border-style: dotted;
     margin: 10px 10px;
     padding: 20px 15px;
   }
@@ -18,5 +20,32 @@ main {
   label {
     padding: 10px 10px;
   }
+  input{
+    padding: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: lightgrey;
+  }
 }
-  
+#botonRegistro{
+  margin: 5px 5px;
+  padding: 9px;
+  border-color: $colorSecundario;
+  border-radius: 10px;
+  font-size: 15px;
+  font-style: italic;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+// MOBILE
+@media screen and (max-width: 426px){
+.mainRegistro{
+  .razonesComerciales, .razonesRegistro{
+    margin: 10px 3px;
+  box-sizing: border-box;
+  }
+  h1{
+    font-size: 1.7rem;
+  }
+}
+}

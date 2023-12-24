@@ -3,11 +3,10 @@
     font-size: 50px;
 }
 .preguntas-faq{
-    display: flex;
+    @include modFlex(center, normal);
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: center;
     div{
         width: 50%;
         font-size: 20px;
@@ -16,5 +15,22 @@
     }
     .p3{
         width: 90%;
+    }
+}
+// MOBILE
+@media screen and (max-width: 426px) {
+    .preguntasFrec{
+        padding: 0;
+        text-align: center;
+    }
+    .preguntas-faq{
+        flex-direction: column;
+        div{
+            width: 100%;
+            padding:0px 40px ;
+        }
+        .p3{
+            width: 100%;
+        }
     }
 }

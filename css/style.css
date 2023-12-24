@@ -1,3 +1,15 @@
+.cajasContenedoras div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagenesPromocion, .cajasContenedoras {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -55,10 +67,56 @@ body header img {
   height: 80px;
 }
 
+@media screen and (max-width: 426px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  header nav {
+    width: 100%;
+    padding: 0;
+    margin-top: 10px;
+  }
+  header nav ul {
+    display: flex;
+    background-color: #d5708e;
+    margin: 0;
+  }
+  header nav li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 10px 4.5px;
+    border-radius: 0px;
+    border-style: none;
+    font-size: 0.7rem;
+  }
+  header nav li a {
+    color: #fcfdf5;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  header {
+    width: 100%;
+  }
+  header nav {
+    padding-right: 0;
+    width: 80%;
+  }
+  header img {
+    height: 50px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body header nav {
+    padding-right: 22px;
+    width: 60%;
+  }
+}
 nav {
   width: 50%;
-  justify-content: space-around;
-  flex-flow: nowrap row;
   position: relative;
   padding-right: 20px;
 }
@@ -79,19 +137,13 @@ nav ul {
 }
 
 .cajasContenedoras {
-  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
 }
 
 .imagenesPromocion {
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 400px;
-  justify-items: center;
-  align-items: center;
 }
 
 footer {
@@ -114,15 +166,46 @@ footer .footer-derechos {
   font-size: 25px;
 }
 
+@media screen and (max-width: 426px) {
+  footer {
+    display: flex;
+  }
+  footer .footer-derechos {
+    font-size: medium;
+  }
+  footer .redes {
+    display: flex;
+    align-items: center;
+  }
+  footer .redes img {
+    height: 20px;
+  }
+  footer .redes a {
+    height: auto;
+  }
+}
+@media screen and (max-width: 320px) {
+  footer .redes img {
+    padding: 0px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  footer .footer-derechos {
+    font-size: 20px;
+  }
+  footer div img {
+    height: 35px;
+  }
+}
 .contenedorSuperior p {
   font-size: 30px;
   padding: 2% 10% 0% 10%;
 }
 .contenedorSuperior div {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
 }
 .contenedorSuperior div img {
   height: 500px;
@@ -162,9 +245,43 @@ footer .footer-derechos {
   padding-bottom: 10%;
 }
 
+@media screen and (max-width: 426px) {
+  .contenedorSuperior {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+  }
+  .contenedorSuperior div img {
+    height: 100px;
+    padding: 0;
+  }
+  .contenedorSuperior div h1 {
+    font-size: 2rem;
+    padding: 0;
+    width: 40%;
+  }
+  .contenedorInferior .textoSn {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .contenedorInferior .titulos1 {
+    padding: 10px 20%;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .contenedorSuperior div img {
+    height: 250px;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .contenedorSuperior div img {
+    padding-right: 50px;
+  }
+}
 .cajaPrincipal {
   display: flex;
   justify-content: space-around;
+  align-items: normal;
   padding: 80px 0px;
 }
 .cajaPrincipal .cajaPrincipalIzquierda .textoPrincipal h1 {
@@ -174,8 +291,8 @@ footer .footer-derechos {
 }
 .cajaPrincipal .cajaPrincipalIzquierda .textoPrincipal-abajo {
   display: flex;
-  align-items: center;
   justify-content: right;
+  align-items: center;
   margin-right: 20%;
 }
 .cajaPrincipal .cajaPrincipalIzquierda .textoPrincipal-abajo h4 {
@@ -200,9 +317,6 @@ footer .footer-derechos {
   height: 700px;
 }
 .cajasContenedoras div {
-  display: flex;
-  text-align: center;
-  justify-content: center;
   align-content: center;
   font-weight: 900;
   width: 60%;
@@ -213,6 +327,7 @@ footer .footer-derechos {
 }
 .cajasContenedoras div p {
   display: flex;
+  justify-content: normal;
   align-items: center;
   text-align: center;
   font-size: 30px;
@@ -220,10 +335,59 @@ footer .footer-derechos {
   color: #fcfdf5;
 }
 
+@media screen and (max-width: 426px) {
+  .cajaPrincipal {
+    padding: 0;
+  }
+  .cajaPrincipal .cajaPrincipalDerecha {
+    position: absolute;
+    z-index: -1;
+    margin-top: 10px;
+    right: 7px;
+  }
+  .cajaPrincipal .cajaPrincipalIzquierda {
+    display: flex;
+    justify-content: left;
+    align-items: normal;
+    height: 320px;
+    flex-direction: column;
+  }
+  .cajaPrincipal .cajaPrincipalIzquierda .textoPrincipal h1 {
+    margin-left: 0;
+    width: 70%;
+  }
+  .cajaPrincipal .cajaPrincipalIzquierda .textoPrincipal-abajo {
+    margin: 0;
+    justify-content: left;
+  }
+  .cajaPrincipal .cajaPrincipalIzquierda .textoPrincipal-abajo h4 {
+    color: black;
+  }
+  .cajasContenedoras {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .cajasContenedoras div {
+    height: auto;
+    width: 80%;
+    margin-top: 50px;
+  }
+  .botonUnete {
+    padding: 5px;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  main .cajasContenedoras div p {
+    padding: 0px 0px;
+  }
+}
 .cajaSuperior {
   display: flex;
-  flex-direction: column;
+  justify-content: normal;
   align-items: center;
+  flex-direction: column;
   height: 100px;
   margin-bottom: 100px;
 }
@@ -250,6 +414,7 @@ footer .footer-derechos {
 #cajaTextoInf #textoInferior {
   display: flex;
   justify-content: center;
+  align-items: normal;
   color: #fcfdf5;
   margin: 0;
 }
@@ -260,136 +425,7 @@ footer .footer-derechos {
   top: 20;
 }
 
-.preguntasFrec {
-  padding-left: 90px;
-  font-size: 50px;
-}
-
-.preguntas-faq {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: center;
-}
-.preguntas-faq div {
-  width: 50%;
-  font-size: 20px;
-  padding: 25px 40px;
-  box-sizing: border-box;
-}
-.preguntas-faq .p3 {
-  width: 90%;
-}
-
-.mainRegistro .razonesRegistro,
-.mainRegistro .razonesComerciales {
-  width: 90%;
-  border-color: black;
-  border-style: solid;
-  margin: 10px 10px;
-  padding: 20px 15px;
-}
-.mainRegistro .razonesComerciales #comentarioDeContacto {
-  height: 200px;
-  width: 99.3%;
-}
-
-main label {
-  padding: 10px 10px;
-}
-
-/* MOBILE */
 @media screen and (max-width: 426px) {
-  /* HEADER */
-  header {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-  }
-  body header nav {
-    width: 100%;
-    padding: 0;
-    margin-top: 10px;
-  }
-  body header nav ul {
-    display: flex;
-    background-color: #d5708e;
-    margin: 0;
-    justify-content: none;
-  }
-  #texto-doble {
-    display: inline-block;
-    width: 100px;
-  }
-  body header nav li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 10px 4.5px;
-    border-radius: 0px;
-    border-style: none;
-    font-size: 0.7rem;
-  }
-  body header nav li a {
-    color: #fcfdf5;
-  }
-  /* MAIN */
-  .cajaPrincipal {
-    padding: 0;
-  }
-  .cajaPrincipalDerecha {
-    position: absolute;
-    z-index: -1;
-    margin-top: 10px;
-    right: 7px;
-  }
-  .cajaPrincipalIzquierda {
-    height: 320px;
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-  }
-  .textoPrincipal h1 {
-    margin-left: 0;
-    width: 70%;
-  }
-  .textoPrincipal-abajo {
-    margin: 0;
-    justify-content: left;
-  }
-  .textoPrincipal-abajo h4 {
-    color: black;
-  }
-  main .cajasContenedoras {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-    padding-bottom: 10px;
-  }
-  main .cajasContenedoras div {
-    height: auto;
-    width: 80%;
-    margin-top: 50px;
-  }
-  .botonUnete {
-    padding: 5px;
-  }
-  /* FOOTER */
-  footer {
-    display: flex;
-  }
-  footer .footer-derechos {
-    font-size: medium;
-  }
-  .redes {
-    display: flex;
-  }
-  footer .redes img {
-    height: 20px;
-  }
-  /* PROMOCIONES */
   .imagenesPromocion {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -406,81 +442,107 @@ main label {
     font-size: 30px;
     width: 90%;
   }
-  #cajaSuperior-calidad {
+  .cajaSuperior #cajaSuperior-calidad {
     text-align: center;
     margin-top: 0;
   }
-  /* SOBRE NOSOTROS */
-  .cajaSuperior-sobreNosotros {
-    width: 100%;
-    justify-content: center;
-    align-content: center;
-  }
-  .cajaSuperior-sobreNosotros img {
-    height: 100px;
-    padding: 0;
-  }
-  .cajaSuperior-sobreNosotros h1 {
-    font-size: 2rem;
-    padding: 0;
-    width: 40%;
-  }
-  .textoSn {
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .titulos1 {
-    padding: 10px 20%;
-  }
-  /* REGISTRO */
-  .mainRegistro .razonesRegistro, .mainRegistro .razonesComerciales {
-    margin: 10px 3px;
-    box-sizing: border-box;
-  }
-  .mainRegistro h1, .mainRegistro h1 {
-    font-size: 1.7rem;
-  }
 }
-/* TABLET */
 @media screen and (min-width: 426px) and (max-width: 768px) {
-  header {
-    /* justify-content: left; */
-    width: 100%;
-  }
-  body header nav {
-    padding-right: 0;
-    width: 80%;
-  }
-  body header img {
-    height: 50px;
-  }
-  main .cajasContenedoras div p {
-    padding: 0px 0px;
-  }
-  footer .footer-derechos {
-    font-size: 20px;
-  }
-  footer div img {
-    height: 35px;
-  }
-  /* PROMOCIONES */
   .imagenesPromocion img {
     height: 10em;
   }
-  /* SOBRE NOSOTROS */
-  .cajaSuperior-sobreNosotros img {
-    height: 200px;
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .imagenesPromocion img {
+    height: 13em;
   }
 }
-/* LAPTOP */
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  body header nav {
-    padding-right: 22px;
-    width: 60%;
-  }
-  /* PROMOCIONES */
-  .cajaSuperior-sobreNosotros img {
+.preguntasFrec {
+  padding-left: 90px;
+  font-size: 50px;
+}
+
+.preguntas-faq {
+  display: flex;
+  justify-content: center;
+  align-items: normal;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.preguntas-faq div {
+  width: 50%;
+  font-size: 20px;
+  padding: 25px 40px;
+  box-sizing: border-box;
+}
+.preguntas-faq .p3 {
+  width: 90%;
+}
+
+@media screen and (max-width: 426px) {
+  .preguntasFrec {
     padding: 0;
+    text-align: center;
+  }
+  .preguntas-faq {
+    flex-direction: column;
+  }
+  .preguntas-faq div {
+    width: 100%;
+    padding: 0px 40px;
+  }
+  .preguntas-faq .p3 {
+    width: 100%;
+  }
+}
+.mainRegistro {
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+  flex-direction: column;
+}
+.mainRegistro .razonesRegistro,
+.mainRegistro .razonesComerciales {
+  width: 90%;
+  border-color: #d5708e;
+  border-style: dotted;
+  margin: 10px 10px;
+  padding: 20px 15px;
+}
+.mainRegistro .razonesComerciales #comentarioDeContacto {
+  height: 200px;
+  width: 99.3%;
+}
+
+main label {
+  padding: 10px 10px;
+}
+main input {
+  padding: 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: lightgrey;
+}
+
+#botonRegistro {
+  margin: 5px 5px;
+  padding: 9px;
+  border-color: #fcfdf5;
+  border-radius: 10px;
+  font-size: 15px;
+  font-style: italic;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+@media screen and (max-width: 426px) {
+  .mainRegistro .razonesComerciales, .mainRegistro .razonesRegistro {
+    margin: 10px 3px;
+    box-sizing: border-box;
+  }
+  .mainRegistro h1 {
+    font-size: 1.7rem;
   }
 }
 

@@ -5,10 +5,8 @@
     padding: 2% 10% 0% 10%;
   }
   div {
-    display: flex;
+    @include modFlex(space-around, center);
     flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
     img {
       height: 500px;
       padding-right: 100px;
@@ -47,4 +45,52 @@
     color: $colorSecundario;
     padding-bottom: 10%;
   }
+}
+// MOBILE
+@media screen and (max-width: 426px) {
+  .contenedorSuperior {
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    div{
+      img {
+        height: 100px;
+        padding: 0;
+      }
+      h1 {
+        font-size: 2rem;
+        padding: 0;
+        width: 40%;
+      }
+    }
+  }
+  .contenedorInferior {
+    .textoSn {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .titulos1 {
+      padding: 10px 20%;
+    }
+  }
+}
+// TABLET
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .contenedorSuperior {
+    div{
+      img {
+        height: 250px;
+      }
+    }
+  }
+}
+// LAPTOP
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+.contenedorSuperior{
+  div{
+    img{
+      padding-right: 50px;
+    }
+  }
+}
 }

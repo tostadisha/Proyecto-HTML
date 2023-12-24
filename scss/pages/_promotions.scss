@@ -1,7 +1,6 @@
 .cajaSuperior {
-  display: flex;
+  @include modFlex(normal, center);
   flex-direction: column;
-  align-items: center;
   height: 100px;
   margin-bottom: 100px;
   h1 {
@@ -23,8 +22,7 @@
 #cajaTextoInf {
   background-color: $colorPrimario;
   #textoInferior {
-    display: flex;
-    justify-content: center;
+    @include modFlex(center, normal);
     color: $colorSecundario;
     margin: 0;
   }
@@ -34,3 +32,42 @@
   margin: 0;
   top: 20;
 }
+// MOBILE
+@media screen and (max-width: 426px) {
+  .imagenesPromocion {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, 200px);
+    img {
+      height: 150px;
+    }
+  }
+  .cajaSuperior {
+    height: auto;
+    margin: 0;
+    h1 {
+      font-size: 30px;
+      width: 90%;
+    }
+    #cajaSuperior-calidad {
+      text-align: center;
+      margin-top: 0;
+    }
+  }
+}
+// TABLET
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  .imagenesPromocion {
+    img {
+      height: 10em;
+    }
+  }
+}
+// LAPTOP
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+.imagenesPromocion{
+  img{
+    height: 13em;
+  }
+}
+  }

@@ -2,9 +2,7 @@
 @import "../utils/variables";
 
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  @include modFlex (space-between, center);
   background-color: $colorPrimario;
   height: 100px;
   .redes {
@@ -20,5 +18,47 @@ footer {
   .footer-derechos {
     color: $colorSecundario;
     font-size: 25px;
+  }
+}
+// MOBILE
+@media screen and (max-width: 426px) {
+  footer {
+    display: flex;
+    .footer-derechos {
+      font-size: medium;
+    }
+    .redes {
+      display: flex;
+      align-items: center;
+      img {
+        height: 20px;
+      }
+      a {
+        height: auto;
+      }
+    }
+  }
+}
+// MOBILE S
+@media screen and (max-width: 320px) {
+  footer {
+    .redes {
+      img {
+        padding: 0px;
+      }
+    }
+  }
+}
+// TABLET
+@media screen and (min-width: 426px) and (max-width: 768px) {
+  footer {
+    .footer-derechos {
+      font-size: 20px;
+    }
+    div {
+      img {
+        height: 35px;
+      }
+    }
   }
 }

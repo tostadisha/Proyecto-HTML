@@ -2,16 +2,12 @@
 @import "../utils/variables";
 
 .cajasContenedoras {
-  display: grid;
+ @extend %gridCentrado;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  justify-items: center;
-  align-items: center;
 }
 .imagenesPromocion {
-  display: grid;
+  @extend %gridCentrado;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 400px;
-  justify-items: center;
-  align-items: center;
 }

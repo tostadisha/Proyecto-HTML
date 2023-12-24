@@ -1,9 +1,7 @@
 // UTILS
 @import "../utils/variables";
-
 .cajaPrincipal {
-  display: flex;
-  justify-content: space-around;
+  @include modFlex(space-around, normal);
   padding: 80px 0px;
   .cajaPrincipalIzquierda {
     .textoPrincipal {
@@ -14,9 +12,7 @@
       }
     }
     .textoPrincipal-abajo {
-      display: flex;
-      align-items: center;
-      justify-content: right;
+      @include modFlex(right, center);
       margin-right: 20%;
       h4 {
         display: inline-block;
@@ -41,9 +37,7 @@
   background-color: $colorPrimario;
   height: 700px;
   div {
-    display: flex;
-    text-align: center;
-    justify-content: center;
+    @extend %centrarFlex;
     align-content: center;
     font-weight: 900;
     width: 60%;
@@ -52,12 +46,67 @@
     border-radius: 50px;
     border-color: $colorSecundario;
     p {
-      display: flex;
-      align-items: center;
+      @include modFlex(normal, center);
       text-align: center;
       font-size: 30px;
       padding: 0px 15px;
       color: $colorSecundario;
+    }
+  }
+}
+// MOBILE
+@media screen and (max-width: 426px) {
+  .cajaPrincipal {
+    padding: 0;
+    .cajaPrincipalDerecha {
+      position: absolute;
+      z-index: -1;
+      margin-top: 10px;
+      right: 7px;
+    }
+    .cajaPrincipalIzquierda {
+      @include modFlex(left, normal);
+      height: 320px;
+      flex-direction: column;
+      .textoPrincipal {
+        h1 {
+          margin-left: 0;
+          width: 70%;
+        }
+      }
+      .textoPrincipal-abajo {
+        margin: 0;
+        justify-content: left;
+        h4 {
+          color: black;
+        }
+      }
+    }
+  }
+  .cajasContenedoras {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-bottom: 10px;
+    div {
+      height: auto;
+      width: 80%;
+      margin-top: 50px;
+    }
+  }
+  .botonUnete {
+    padding: 5px;
+  }
+}
+// TABLET
+@media screen and (min-width:426px) and (max-width:768px){
+  main{
+    .cajasContenedoras{
+      div{
+        p{
+          padding: 0px 0px;
+        }
+      }
     }
   }
 }
