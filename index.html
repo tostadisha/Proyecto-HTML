@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,15 +11,22 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Ubuntu:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <title>Lorem</title>
+    <title>Lorem - Un banco de confianza</title>
+    <meta
+      name="description"
+      content="Descubre la revolución bancaria con nuestro banco totalmente sin impuestos. Accede a servicios financieros innovadores, gestiona tu dinero de forma simple y segura, y disfruta de una experiencia única en banca digital. Únete a nosotros para descubrir un nuevo mundo de posibilidades financieras."
+    />
+    <meta name="keywords" content="banco digital, servicios financieros, cuentas sin comisiones, tarjetas prepagas, gestion financiera, app bancaria móvil, pagos online seguros, ahorro inteligente, experiencia buena, dolares, pesos, economia">
   </head>
   <body>
     <header>
-      <img src="images/lorem-logo.png" alt="Logo" />
+      <img src="images/lorem-logo.png" alt="Logo de Lorem" />
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
-          <li><a href="pages/sobre-nosotros.html">Sobre<br>nosotros</a></li>
+          <li>
+            <a href="pages/sobre-nosotros.html">Sobre<br />nosotros</a>
+          </li>
           <li><a href="pages/promociones.html">Promociones</a></li>
           <li><a href="pages/faq.html">FAQ</a></li>
           <li><a href="pages/registro.html">Registrate</a></li>
@@ -42,15 +50,21 @@
         </div>
       </div>
       <article class="cajasContenedoras">
-        <div><p>Comprá y vendé dolar MEP.</p></div>
-        <div><p>Realizá transferencias al instante.</p></div>
-        <div><p>Aprovechá los multiples descuentos exclusivos.</p></div>
-        <div>
+        <div data-aos="flip-left"><p>Comprá y vendé dolar MEP.</p></div>
+        <div data-aos="flip-right">
+          <p>Realizá transferencias al instante.</p>
+        </div>
+        <div data-aos="flip-left">
+          <p>Aprovechá los multiples descuentos exclusivos.</p>
+        </div>
+        <div data-aos="flip-right">
           <p>Asegurá tu auto, tu celular, lo que quieras, cuando quieras.</p>
         </div>
       </article>
       <div class="botonUnete">
-        <button><a href="pages/registro.html">Se parte de Lorem</a></button>
+        <button data-aos="fade-up" data-aos-duration="2000">
+          <a href="pages/registro.html">Se parte de Lorem</a>
+        </button>
       </div>
     </main>
     <footer>
@@ -71,5 +85,9 @@
         <img src="images/logo-front-sin-fondo.png" alt="Logo de Lorem" />
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

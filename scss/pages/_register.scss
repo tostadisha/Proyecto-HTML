@@ -44,8 +44,19 @@ main {
     margin: 10px 3px;
   box-sizing: border-box;
   }
+  .razonesComerciales{
+    #comentarioDeContacto{
+      width: 96%;
+    }
+  }
   h1{
     font-size: 1.7rem;
+    text-align: center;
   }
+}
+
+.flexMobileRegistro{
+  display: flex;
+  flex-direction: column;
 }
 }

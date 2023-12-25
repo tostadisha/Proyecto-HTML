@@ -29,34 +29,6 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-main .botonUnete {
-  background-color: #d5708e;
-  display: flex;
-  justify-content: center;
-}
-main .botonUnete button {
-  font-size: 20px;
-  padding: 10px;
-  border-radius: 20px;
-  border-style: double;
-  background-color: #d5708e;
-  border-color: #fcfdf5;
-}
-main .botonUnete button a {
-  color: #fcfdf5;
-}
-
-.cajaPrincipal button {
-  background-color: #d5708e;
-  padding: 10px;
-  border-color: beige;
-  border-style: inherit;
-  border-radius: 50px;
-}
-.cajaPrincipal button a {
-  color: black;
-}
-
 body header {
   display: flex;
   justify-content: space-between;
@@ -197,6 +169,34 @@ footer .footer-derechos {
     height: 35px;
   }
 }
+main .botonUnete {
+  background-color: #d5708e;
+  display: flex;
+  justify-content: center;
+}
+main .botonUnete button {
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 20px;
+  border-style: double;
+  background-color: #d5708e;
+  border-color: #fcfdf5;
+}
+main .botonUnete button a {
+  color: #fcfdf5;
+}
+
+.cajaPrincipal button {
+  background-color: #d5708e;
+  padding: 10px;
+  border-color: beige;
+  border-style: inherit;
+  border-radius: 50px;
+}
+.cajaPrincipal button a {
+  color: black;
+}
+
 .contenedorSuperior p {
   font-size: 30px;
   padding: 2% 10% 0% 10%;
@@ -259,10 +259,6 @@ footer .footer-derechos {
     font-size: 2rem;
     padding: 0;
     width: 40%;
-  }
-  .contenedorInferior .textoSn {
-    padding-left: 10px;
-    padding-right: 10px;
   }
   .contenedorInferior .titulos1 {
     padding: 10px 20%;
@@ -496,6 +492,11 @@ footer .footer-derechos {
     width: 100%;
   }
 }
+@media screen and (min-width: 1650px) {
+  .arregloView {
+    height: 850px;
+  }
+}
 .mainRegistro {
   display: flex;
   justify-content: normal;
@@ -541,8 +542,16 @@ main input {
     margin: 10px 3px;
     box-sizing: border-box;
   }
+  .mainRegistro .razonesComerciales #comentarioDeContacto {
+    width: 96%;
+  }
   .mainRegistro h1 {
     font-size: 1.7rem;
+    text-align: center;
+  }
+  .flexMobileRegistro {
+    display: flex;
+    flex-direction: column;
   }
 }
 

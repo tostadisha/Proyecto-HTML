@@ -10,11 +10,12 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Ubuntu:wght@300;400&display=swap"
       rel="stylesheet"
     />
-    <title>Registro</title>
+    <title>Registro | Lorem</title>
+    <meta name="description" content="Registrate y sé parte de Lorem, únete a las más de 10000 personas que están en nuestro sistema"/>
   </head>
   <body>
     <header>
-      <img src="../images/lorem-logo.png" alt="Logo" />
+      <img src="../images/lorem-logo.png" alt="Logo de Lorem" />
       <nav>
         <ul>
           <li><a href="../index.html">Home</a></li>
@@ -29,21 +30,21 @@
       <h1>¡Registrate, sé parte de Lorem!</h1>
       <div class="razonesRegistro">
         <form>
-          <div>
+          <div class="flexMobileRegistro">
             <label for="Name">Nombre de usuario o correo electrónico:</label>
             <input name="Name" placeholder="feliznavidad@gmail.com" />
           </div>
           <br/>
-          <div>
+          <div class="flexMobileRegistro">
             <label for="password">Contraseña:</label>
             <input type="password" placeholder="******************" />
           </div>
           <br/>
-          <div>
+          <div class="flexMobileRegistro">
             <label for="number">DNI:</label>
             <input type="number" placeholder="28459413" />
           </div>
-          <div>
+          <div class="flexMobileRegistro">
             <button class="botonUnete" id="botonRegistro">
               Enviar
             </button>
@@ -53,25 +54,27 @@
       <h1>Por otras consultas o razones comerciales:</h1>
       <div class="razonesComerciales">
         <form> 
-          <div>
+          <div class="flexMobileRegistro">
             <label for="Name">Nombre de usuario o correo electrónico:</label> 
             <input name="Name" placeholder="feliznavidad@gmail.com" /> 
           </div>
           <br>
-          <div>
+          <div class="flexMobileRegistro">
             <label for="number">DNI:</label>
             <input type="number" id= "number" placeholder="28459413" />
           </div>
           <br>
-          <div>
+          <div class="flexMobileRegistro">
             <label for="nombre">Razón de contacto:</label>
             <input type="text" id="nombre">
           </div>
           <br>
           <input type="text" id="comentarioDeContacto">
-          <button class="botonUnete" id="botonRegistro">
-            Enviar
-          </button>
+          <div class="flexMobileRegistro">
+            <button class="botonUnete" id="botonRegistro">
+              Enviar
+            </button>
+          </div>
         </div>
         </form>
     </main>

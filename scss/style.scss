@@ -6,13 +6,13 @@
 // BASE
 @import "base/reset";
 @import "base/typography";
-// COMPONENTS
-@import "components/button";
 // LAYOUT
 @import "layout/header";
 @import "layout/navbar";
 @import "layout/grid";
 @import "layout/footer";
+// COMPONENTS
+@import "components/button";
 // PAGES
 @import "pages/aboutUs";
 @import "pages/home";
