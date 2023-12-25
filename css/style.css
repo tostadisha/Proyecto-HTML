@@ -374,6 +374,14 @@ main .botonUnete button a {
     padding: 5px;
   }
 }
+@media screen and (min-width: 768px) {
+  .cajaPrincipal .cajaPrincipalIzquierda .textoPrincipal h1 {
+    font-size: 40px;
+  }
+  .cajaPrincipal .cajaPrincipalIzquierda .textoPrincipal-abajo h4 {
+    font-size: 22px;
+  }
+}
 @media screen and (min-width: 426px) and (max-width: 768px) {
   main .cajasContenedoras div p {
     padding: 0px 0px;
