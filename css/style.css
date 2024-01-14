@@ -38,8 +38,13 @@ body header img {
   width: auto;
   height: 80px;
 }
+body header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-@media screen and (max-width: 426px) {
+@media screen and (max-width: 768px) {
   header {
     display: flex;
     flex-direction: column;
@@ -67,6 +72,7 @@ body header img {
   }
   header nav li a {
     color: #fcfdf5;
+    font-size: 13px;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
@@ -85,6 +91,17 @@ body header img {
   body header nav {
     padding-right: 22px;
     width: 60%;
+  }
+}
+@media screen and (min-width: 425px) and (max-width: 768px) {
+  body header nav {
+    width: 100%;
+  }
+  body header ul {
+    justify-content: space-around;
+  }
+  body header ul a {
+    font-size: large;
   }
 }
 nav {
@@ -127,7 +144,6 @@ footer {
 }
 footer .redes a {
   height: 50px;
-  padding: 10px;
 }
 footer .redes img {
   height: 50px;
@@ -162,11 +178,15 @@ footer .footer-derechos {
   }
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+    height: auto;
+  }
   footer .footer-derechos {
     font-size: 20px;
   }
-  footer div img {
-    height: 35px;
+  footer .redes img {
+    height: 50px;
   }
 }
 main .botonUnete {
@@ -260,17 +280,38 @@ main .botonUnete button a {
     padding: 0;
     width: 40%;
   }
+  .contenedorSuperior p {
+    font-size: 25px;
+  }
   .contenedorInferior .titulos1 {
     padding: 10px 20%;
+    font-size: 35px;
+    text-align: center;
+  }
+  .contenedorInferior p {
+    font-size: 20px;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .contenedorSuperior div img {
-    height: 250px;
+    width: 40%;
+    height: auto;
+    padding-right: 0;
+  }
+  .contenedorSuperior div h1 {
+    width: 60%;
+    box-sizing: border-box;
+    padding-left: 5px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+  .contenedorSuperior h1 {
+    width: 40%;
+  }
   .contenedorSuperior div img {
+    width: 40%;
+    height: auto;
     padding-right: 50px;
   }
 }
@@ -375,11 +416,18 @@ main .botonUnete button a {
   }
 }
 @media screen and (min-width: 768px) {
+  .cajaPrincipal {
+    padding-top: 40px;
+  }
   .cajaPrincipal .cajaPrincipalIzquierda .textoPrincipal h1 {
     font-size: 40px;
+    margin-left: 100px;
   }
   .cajaPrincipal .cajaPrincipalIzquierda .textoPrincipal-abajo h4 {
     font-size: 22px;
+  }
+  .cajaPrincipal img {
+    padding-right: 10px;
   }
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
@@ -408,8 +456,24 @@ main .botonUnete button a {
   position: absolute;
 }
 
+.imagenesPromocion div {
+  display: flex;
+  flex-direction: column;
+  display: flex;
+  justify-content: normal;
+  align-items: center;
+}
+.imagenesPromocion div p {
+  font-size: 18px;
+  text-align: center;
+  color: #d5708e;
+  font-weight: 600;
+}
 .imagenesPromocion img {
   height: 280px;
+}
+.imagenesPromocion #fondoRosaPromo p {
+  color: white;
 }
 
 #cajaTextoInf {
@@ -433,7 +497,6 @@ main .botonUnete button a {
   .imagenesPromocion {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(2, 200px);
   }
   .imagenesPromocion img {
     height: 150px;
@@ -461,6 +524,14 @@ main .botonUnete button a {
     height: 13em;
   }
 }
+@media screen and (min-width: 769px) {
+  .imagenesPromocion div p {
+    font-size: 25px;
+  }
+  .imagenesPromocion #fondoRosaPromo p {
+    font-size: 25px;
+  }
+}
 .preguntasFrec {
   padding-left: 90px;
   font-size: 50px;
@@ -473,6 +544,9 @@ main .botonUnete button a {
   flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
+}
+.preguntas-faq img {
+  height: 100px;
 }
 .preguntas-faq div {
   width: 50%;
@@ -502,7 +576,7 @@ main .botonUnete button a {
 }
 @media screen and (min-width: 1650px) {
   .arregloView {
-    height: 850px;
+    height: 1000px;
   }
 }
 .mainRegistro {

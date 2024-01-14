@@ -15,8 +15,24 @@
   position: absolute;
 }
 .imagenesPromocion {
+  div{
+    display: flex;
+    flex-direction: column;
+    @include modFlex(normal, center);
+    p{
+      font-size: 18px;
+      text-align: center;
+      color: $colorPrimario;
+      font-weight: 600;
+    }
+  }
   img {
     height: 280px;
+  }
+  #fondoRosaPromo{
+    p{
+    color: white;
+    }
   }
 }
 #cajaTextoInf {
@@ -37,7 +53,6 @@
   .imagenesPromocion {
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: repeat(2, 200px);
     img {
       height: 150px;
     }
@@ -70,4 +85,19 @@
     height: 13em;
   }
 }
+}
+// DESKTOP´
+@media screen and (min-width:769px){
+  .imagenesPromocion{
+    div{
+      p{
+        font-size: 25px;
+      }
+    }
+    #fondoRosaPromo{
+      p{
+        font-size: 25px;
+      }
+    }
   }
+}

@@ -8,10 +8,13 @@ body {
       width: auto;
       height: 80px;
     }
+    nav{
+      @include modFlex(space-between, center)
+    }
   }
 }
-// MOBILE
-@media screen and (max-width: 426px) {
+// MOBILE Y TABLET
+@media screen and (max-width: 768px) {
   header {
     display: flex;
     flex-direction: column;
@@ -24,7 +27,6 @@ body {
         display: flex;
         background-color: $colorPrimario;
         margin: 0;
-        
       }
       li {
         display: flex;
@@ -37,6 +39,7 @@ body {
         font-size: 0.7rem;
         a {
           color: $colorSecundario;
+          font-size: 13px;
         }
       }
     }
@@ -64,4 +67,20 @@ body {
       }
     }
   }
+}
+// TABLET
+@media screen and (min-width:425px) and (max-width:768px) {
+body{
+  header{
+    nav{
+      width: 100%;
+    }
+    ul{
+      justify-content: space-around;
+      a{
+        font-size: large;
+      }
+    }
+  }
+} 
 }

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -11,61 +11,114 @@
       rel="stylesheet"
     />
     <title>Promociones | Lorem</title>
-    <meta name="description" content="Mirá la cantidad de empresas importantes con las que estamos..."/>
-</head>
-<body>
-  <header>
-    <img src="../images/lorem-logo.png" alt="Logo de Lorem" />
-    <nav>
-      <ul>
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="sobre-nosotros.html">Sobre<br>nosotros</a></li>
-        <li><a href="#">Promociones</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="registro.html">Registrate</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="cajaSuperior">
-      <h1>Nos asociamos con <strong>todas</strong> las marcas para brindarte la mejor experiencia con Lorem.</h1>
-      <h1 id="cajaSuperior-calidad">¡Calidad asegurada!</h1>
-    </div>
-    <div class="imagenesPromocion">
-      <img src="../images/xiaomi-logo.webp" alt="Logo de Xiaomi">
-      <img src="../images/logitech-logo.webp" alt="Logo de Logitech">
-      <img src="../images/xbox-logo.webp" alt="Logo de Xbox">
-      <img src="../images/nvidia-logo.webp" alt="Logo de Nvidia">
-    </div>
-    <img id="olaPromociones" class="ola" src="../images/ola-fondo.png" alt=""> 
-    <div class="imagenesPromocion fondoRosa">
-      <img src="../images/samsung-logo.webp" alt="Logo de Samsung">
-      <img src="../images/dia-logo.webp" alt="Logo de supermercado Dia">
-      <img src="../images/carrefour-logo.webp" alt="Logo de Carrefour">
-      <img src="../images/appe-logo.webp" alt="Logo de Apple">
-    </div>
-
-    <div id="cajaTextoInf">
-      <h1 id="textoInferior">Y mucho más....</h1>
-    </div>
-  </main>
-  <footer>
-    <div class="footer-derechos"><p>Todos los derechos reservados. ©</p></div>
-    <div class="redes">
-      <a href="https://www.facebook.com"
-        ><img src="../images/logo-facebook.png" alt="Logo de Facebook"
-      /></a>
-      <a href="https://twitter.com/home"
-        ><img src="../images/logo-twitter.png" alt="Logo de Twitter"
-      /></a>
-      <a href="https://www.youtube.com/"
-        ><img src="../images/logo-youtube.png" alt="Logo de Youtube"
-      /></a>
-      <a href="https://www.instagram.com/"
-        ><img src="../images/logo-instagram.png" alt="Logo de Instagram"
-      /></a>
-      <img src="../images/logo-front-sin-fondo.png" alt="Logo de Lorem" />
-    </div>
-  </footer>
-</body>
+    <meta
+      name="description"
+      content="Mirá la cantidad de empresas importantes con las que estamos..."
+    />
+  </head>
+  <body>
+    <header>
+      <img src="../images/lorem-logo.png" alt="Logo de Lorem" />
+      <nav>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="sobre-nosotros.html">Sobre<br />nosotros</a>
+          </li>
+          <li><a href="#">Promociones</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="registro.html">Registrate</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="cajaSuperior">
+        <h1>
+          Nos asociamos con <strong>todas</strong> las marcas para brindarte la
+          mejor experiencia con Lorem. <br />Dale click a cualquiera para ver
+          sus productos y tener un 10% de descuento
+        </h1>
+        <h1 id="cajaSuperior-calidad">¡Calidad asegurada!</h1>
+      </div>
+      <div class="imagenesPromocion">
+        <div class="flexPromo">
+          <a href="https://xiaomistore.com.ar/"
+            ><img src="../images/xiaomi-logo.webp" alt="Logo de Xiaomi"
+          /></a>
+          <p>10% de descuento en celulares</p>
+        </div>
+        <div class="flexPromo">
+          <a href="https://www.logitechstore.com.ar/"
+            ><img src="../images/logitech-logo.webp" alt="Logo de Logitech"
+          /></a>
+          <p>50% de descuento en auriculares</p>
+        </div>
+        <div class="flexPromo">
+          <a href="https://www.xbox.com/es-AR"
+            ><img src="../images/xbox-logo.webp" alt="Logo de Xbox"
+          /></a>
+          <p>100% de reintegro en XBOX Game Pass</p>
+        </div>
+        <div class="flexPromo">
+          <a href="https://www.nvidia.com/es-la/"
+            ><img src="../images/nvidia-logo.webp" alt="Logo de Nvidia"
+          /></a>
+          <p>Cupón de regalo</p>
+        </div>
+      </div>
+      <img
+        id="olaPromociones"
+        class="ola"
+        src="../images/ola-fondo.png"
+        alt=""
+      />
+      <div class="imagenesPromocion fondoRosa">
+        <div class="flexPromo" id="fondoRosaPromo">
+          <a href="https://www.samsung.com/ar/"
+            ><img src="../images/samsung-logo.webp" alt="Logo de Samsung"
+          /></a>
+          <p>Samsung Care sin cargo</p>
+        </div>
+        <div class="flexPromo" id="fondoRosaPromo">
+          <a href="https://diaonline.supermercadosdia.com.ar/"
+            ><img src="../images/dia-logo.webp" alt="Logo de supermercado Dia"
+          /></a>
+          <p>Reintegro del IVA</p>
+        </div>
+        <div class="flexPromo" id="fondoRosaPromo">
+          <a href="https://www.carrefour.com.ar/"
+            ><img src="../images/carrefour-logo.webp" alt="Logo de Carrefour"
+          /></a>
+          <p>70% de descuento en tecnología</p>
+        </div>
+        <div class="flexPromo" id="fondoRosaPromo">
+          <a href="https://www.apple.com/la/"
+            ><img src="../images/appe-logo.webp" alt="Logo de Apple"
+          /></a>
+          <p>Iphone gratis</p>
+        </div>
+      </div>
+      <div id="cajaTextoInf">
+        <h1 id="textoInferior">Y mucho más....</h1>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-derechos"><p>Todos los derechos reservados. ©</p></div>
+      <div class="redes">
+        <a href="https://www.facebook.com"
+          ><img src="../images/logo-facebook.png" alt="Logo de Facebook"
+        /></a>
+        <a href="https://twitter.com/home"
+          ><img src="../images/logo-twitter.png" alt="Logo de Twitter"
+        /></a>
+        <a href="https://www.youtube.com/"
+          ><img src="../images/logo-youtube.png" alt="Logo de Youtube"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="../images/logo-instagram.png" alt="Logo de Instagram"
+        /></a>
+        <img src="../images/logo-front-sin-fondo.png" alt="Logo de Lorem" />
+      </div>
+    </footer>
+  </body>
 </html>

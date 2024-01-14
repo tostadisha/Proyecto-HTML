@@ -7,6 +7,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     text-align: center;
+    img{
+        height: 100px;
+    }
     div{
         width: 50%;
         font-size: 20px;
@@ -37,6 +40,6 @@
 // ABOVE-DESKTOP
 @media screen and (min-width: 1650px){
     .arregloView{
-        height: 850px;
+        height: 1000px;
     }
 }
