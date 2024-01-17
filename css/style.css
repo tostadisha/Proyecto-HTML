@@ -440,8 +440,7 @@ main .botonUnete button a {
   justify-content: normal;
   align-items: center;
   flex-direction: column;
-  height: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 .cajaSuperior h1 {
   display: inline-block;
@@ -502,7 +501,6 @@ main .botonUnete button a {
     height: 140px;
   }
   .cajaSuperior {
-    height: auto;
     margin: 0;
   }
   .cajaSuperior h1 {
@@ -516,12 +514,31 @@ main .botonUnete button a {
 }
 @media screen and (min-width: 426px) and (max-width: 768px) {
   .imagenesPromocion img {
-    height: 10em;
+    width: 100%;
+    height: auto;
+  }
+  .cajaSuperior {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-  .imagenesPromocion img {
-    height: 13em;
+  .imagenesPromocion div {
+    height: auto;
+  }
+  .imagenesPromocion div img {
+    height: auto;
+    width: 100%;
+  }
+  .imagenesPromocion div a {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 2560px) {
+  .imagenesPromocion div {
+    height: auto;
+  }
+  .imagenesPromocion div a, .imagenesPromocion div img {
+    width: 100%;
   }
 }
 @media screen and (min-width: 769px) {
