@@ -132,7 +132,7 @@ nav ul {
 
 .imagenesPromocion {
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 400px;
+  align-items: baseline;
 }
 
 footer {
@@ -467,9 +467,6 @@ main .botonUnete button a {
   text-align: center;
   color: #d5708e;
   font-weight: 600;
-}
-.imagenesPromocion img {
-  height: 280px;
 }
 .imagenesPromocion #fondoRosaPromo p {
   color: white;
